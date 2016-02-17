@@ -10,7 +10,7 @@ Depending on your circumstances will depend on whether or not you need to modify
 
 To debug, you will need to add the following line into the Build.xml file underneath `<haxe id="files">`:
 
-  <flag value="-debug" />
+    <flag value="-debug" />
 
 If you do use this option, you will need to copy the appropriate *.lib files with the `-d` suffix.
 
