@@ -4,5 +4,4 @@ package sfml.window;
 @:structAccess
 @:native("sf::Event")
 extern class Event {
-    @:native("type")        public var type:Int;
 }

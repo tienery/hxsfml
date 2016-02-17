@@ -16,8 +16,9 @@ class Main
             var event = NativeEvent.createEvent();
             if (window.pollEvent(event))
             {
-                if (event.type == EventType.CLOSED)
+                if (NativeEvent.getEventType(event) == 0) {
                     window.close();
+                }
             }
             
             window.display();

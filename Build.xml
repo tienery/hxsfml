@@ -8,6 +8,7 @@
         </files>
         
         <target id="haxe" tool="linker" toolid="exe">
+            <!-- <flag value="/VERBOSE" /> -->
             <lib name="${haxelib:hxsfml}/../lib/sfml-audio.lib" />
             <lib name="${haxelib:hxsfml}/../lib/sfml-graphics.lib" />
             <lib name="${haxelib:hxsfml}/../lib/sfml-main.lib" />
