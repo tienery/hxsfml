@@ -1,0 +1,18 @@
+<xml>
+    <section if="windows">
+        <files id="haxe">
+            <compilerflag value="-I${haxelib:hxsfml}/../SFML/include" />
+            <compilerflag value="-DUNICODE" />
+            <compilerflag value="-D_UNICODE" />
+        </files>
+        
+        <target id="haxe" tool="linker" toolid="exe">
+            <lib name="${haxelib:hxsfml}/../lib/sfml-audio.lib" />
+            <lib name="${haxelib:hxsfml}/../lib/sfml-graphics.lib" />
+            <lib name="${haxelib:hxsfml}/../lib/sfml-main.lib" />
+            <lib name="${haxelib:hxsfml}/../lib/sfml-network.lib" />
+            <lib name="${haxelib:hxsfml}/../lib/sfml-system.lib" />
+            <lib name="${haxelib:hxsfml}/../lib/sfml-window.lib" />
+        </target>
+    </section>
+</xml>
