@@ -4,5 +4,9 @@ package sfml.window;
 @:structAccess
 @:native("sf::Event&")
 extern class Event {
-    @:native("size")    public var size:SizeEvent;
+    @:native("size")            public var size:SizeEvent;
+    @:native("joystickButton")  public var joystickButton:JoystickButtonEvent;
+    @:native("joystickConnect") public var joystickConnect:JoystickConnectEvent;
+    @:native("joystickMove")    public var joystickMove:JoystickMoveEvent;
+    @:native("type")            public var type:Int;
 }
