@@ -1,7 +1,7 @@
 package;
 
 import sfml.window.*;
-import window.Event in NativeEvent;
+import window.EventHelper;
 
 @:buildXml('<include name="${haxelib:hxsfml}/../Build.xml" />')
 class Main
@@ -9,14 +9,14 @@ class Main
     
     public static function main()
     {
-        var window = Window.create(VideoMode.create(800, 600), "Test 01 - Blank Window");
+        var window:Window = Window.create(VideoMode.create(800, 600), "Test 01 - Blank Window");
         
         while (window.isOpen())
         {
-            var event = NativeEvent.createEvent();
-            if (window.pollEvent(event))
+            var event = EventHelper.createEvent();
+            while (window.pollEvent(event))
             {
-                if (NativeEvent.getEventType(event) == 0) {
+                if (EventHelper.getEventType(event) == 1) {
                     window.close();
                 }
             }

@@ -4,4 +4,5 @@ package sfml.window;
 @:structAccess
 @:native("sf::Event")
 extern class Event {
+    @:native("size")    public var size:SizeEvent;
 }

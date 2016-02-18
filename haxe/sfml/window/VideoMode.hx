@@ -1,7 +1,7 @@
 package sfml.window;
 
 @:include("SFML/Window.hpp")
-@:unreflective
+@:structAccess
 @:native("sf::VideoMode")
 extern class VideoMode {
     @:native("sf::VideoMode")   public static function create(width:UInt, height:UInt, bitsPerPixel:UInt = 32):VideoMode;
