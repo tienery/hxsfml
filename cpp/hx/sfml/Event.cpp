@@ -6,12 +6,12 @@ namespace hx {
         
         class Event {
             public:
-                static sf::Event createEvent();
+                static sf::Event& createEvent();
                 static int getEventType(sf::Event &event);
                 
         };
         
-        sf::Event Event::createEvent()
+        sf::Event& Event::createEvent()
         {
             sf::Event event;
             return event;

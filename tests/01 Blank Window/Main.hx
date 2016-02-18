@@ -16,7 +16,8 @@ class Main
             var event = EventHelper.createEvent();
             while (window.pollEvent(event))
             {
-                if (EventHelper.getEventType(event) == 1) {
+                var result = EventHelper.getEventType(event);
+                if (result == 1) {
                     window.close();
                 }
             }
