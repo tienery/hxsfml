@@ -26,3 +26,9 @@ extern class Vector2f extends Vector2<Float> {
     @:native("sf::Vector2f")         public static function create(x:Float, y:Float):Vector2f;
     @:native("sf::Vector2f")         public static function createEmpty():Vector2f;
 }
+
+@:include("SFML/System.hpp")
+@:structAccess
+@:native("sf::Vector2f")
+extern class Vector2fRaw extends Vector2<Float> {
+}
