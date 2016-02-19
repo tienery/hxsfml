@@ -14,8 +14,8 @@ extern class Vector2<T> {
 @:native("const sf::Vector2i&")
 extern class Vector2i extends Vector2<Int> {
     //Constructors
-    @:native("sf::Vector2i")         public static function create():Vector2i;
-    @:native("sf::Vector2i")         public static function createByPoint(x:Int, y:Int):Vector2i;
+    @:native("sf::Vector2i")         public static function create(x:Int, y:Int):Vector2i;
+    @:native("sf::Vector2i")         public static function createEmpty():Vector2i;
 }
 
 @:include("SFML/System.hpp")
@@ -23,6 +23,6 @@ extern class Vector2i extends Vector2<Int> {
 @:native("const sf::Vector2f&")
 extern class Vector2f extends Vector2<Float> {
     //Constructors
-    @:native("sf::Vector2f")         public static function create():Vector2f;
-    @:native("sf::Vector2f")         public static function createByPoint(x:Float, y:Float):Vector2f;
+    @:native("sf::Vector2f")         public static function create(x:Float, y:Float):Vector2f;
+    @:native("sf::Vector2f")         public static function createEmpty():Vector2f;
 }

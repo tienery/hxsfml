@@ -27,19 +27,19 @@ class Main
             
             var circle = CircleShape.create(50, 30);
             circle.setFillColor(Color.green);
-            circle.setPosition(Vector2f.createByPoint(50, 50));
+            circle.setPosition(Vector2f.create(50, 50));
             
-            var rect = RectangleShape.create(Vector2f.createByPoint(100, 100));
+            var rect = RectangleShape.create(Vector2f.create(100, 100));
             rect.setFillColor(Color.blue);
-            rect.setPosition(Vector2f.createByPoint(150, 50));
+            rect.setPosition(Vector2f.create(150, 50));
             
             var polygon = ConvexShape.create(3);
-            polygon.setPoint(0, Vector2f.createByPoint(0, 0));
-            polygon.setPoint(1, Vector2f.createByPoint(0, 10));
-            polygon.setPoint(2, Vector2f.createByPoint(25, 5));
+            polygon.setPoint(0, Vector2f.create(0, 0));
+            polygon.setPoint(1, Vector2f.create(0, 10));
+            polygon.setPoint(2, Vector2f.create(25, 5));
             polygon.setOutlineColor(Color.cyan);
             polygon.setOutlineThickness(5);
-            polygon.setPosition(Vector2f.createByPoint(10, 20));
+            polygon.setPosition(Vector2f.create(10, 20));
             
             window.draw(circle, RenderStates.DEFAULT);
             window.draw(rect, RenderStates.DEFAULT);
