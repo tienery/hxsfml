@@ -3,6 +3,7 @@ package sfml.graphics;
 import sfml.system.Vector2.Vector2i;
 import sfml.system.Vector2.Vector2f;
 import sfml.graphics.Rect.IntRect;
+import sfml.graphics.RenderStates.RenderStatesConst;
 
 interface RenderTarget {
     
@@ -15,6 +16,6 @@ interface RenderTarget {
     public function mapPixelToCoordsFromView(point:Vector2i, view:View):Vector2i;
     public function mapCoordsToPixel(point:Vector2f):Vector2i;
     public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
-    public function draw(drawable:Drawable, states:RenderStates):Void;
+    public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
     
 }

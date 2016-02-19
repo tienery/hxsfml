@@ -11,5 +11,10 @@ extern class RenderStates {
     @:native("blendMode")       public var blendMode:BlendMode;
     
     //Static members
-    @:native("sf::RenderStates::Default")   public static var DEFAULT:RenderStates;
+    @:native("sf::RenderStates::Default")   public static var DEFAULT:RenderStatesConst;
+}
+
+@:include("SFML/Graphics.hpp")
+@:native("const sf::RenderStates&")
+extern class RenderStatesConst {
 }

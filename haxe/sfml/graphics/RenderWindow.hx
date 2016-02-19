@@ -6,6 +6,7 @@ import sfml.window.VideoMode;
 import sfml.system.Vector2.Vector2i;
 import sfml.system.Vector2.Vector2f;
 import sfml.graphics.Rect.IntRect;
+import sfml.graphics.RenderStates.RenderStatesConst;
 
 @:include("SFML/Graphics.hpp")
 @:structAccess
@@ -21,6 +22,6 @@ extern class RenderWindow extends Window implements RenderTarget {
     @:native("mapPixelToCoordsFromView")public function mapPixelToCoordsFromView(point:Vector2i, view:View):Vector2i;
     @:native("mapCoordsToPixel")        public function mapCoordsToPixel(point:Vector2f):Vector2i;
     @:native("mapCoordsToPixelFromView")public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
-    @:native("draw")                    public function draw(drawable:Drawable, states:RenderStates):Void;
+    @:native("draw")                    public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
     
 }

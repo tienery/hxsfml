@@ -1,5 +1,5 @@
 package sfml.graphics;
 
 interface Drawable {
-    public function draw(target:RenderTarget, states:RenderStates):Void;
+    public function draw(target:RenderTarget, ?states:RenderStates):Void;
 }
