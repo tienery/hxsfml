@@ -11,7 +11,7 @@ class Main
     
     public static function main()
     {
-        var window:RenderWindow = RenderWindow.create(VideoMode.create(800, 600), "Test 02 - Shapes");
+        var window:RenderWindow = RenderWindow.create(VideoMode.create(800, 600), "Test 03 - Text");
         
         var openSans:Font = Font.create();
         if (!openSans.loadFromFile("OpenSans-Regular.ttf"))
