@@ -1,5 +1,6 @@
 package;
 
+import sfml.graphics.*;
 import sfml.window.*;
 import window.EventHelper;
 
@@ -9,7 +10,7 @@ class Main
     
     public static function main()
     {
-        var window:Window = Window.create(VideoMode.create(800, 600), "Test 01 - Blank Window");
+        var window:RenderWindow = RenderWindow.create(VideoMode.create(800, 600), "Test 01 - Blank Window");
         
         while (window.isOpen())
         {
@@ -20,6 +21,8 @@ class Main
                     window.close();
                 }
             }
+            
+            window.clear(Color.red);
             
             window.display();
         }
