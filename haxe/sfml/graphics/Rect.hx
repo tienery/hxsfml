@@ -26,6 +26,15 @@ extern class IntRect extends RectObj<Int> {
 
 @:include("SFML/Graphics.hpp")
 @:structAccess
+@:native("const sf::IntRect&")
+extern class ConstIntRectPtr extends IntRect {
+    @:native("sf::IntRect")        public static function create():ConstIntRectPtr;
+    @:native("sf::IntRect")        public static function createByPart(x:Int, y:Int, width:Int, height:Int):ConstIntRectPtr;
+    @:native("sf::IntRect")        public static function createByVector(position:Vector2i, size:Vector2i):ConstIntRectPtr;
+}
+
+@:include("SFML/Graphics.hpp")
+@:structAccess
 @:native("sf::FloatRect")
 extern class FloatRect extends RectObj<Float> {
     @:native("sf::FloatRect")        public static function create():FloatRect;

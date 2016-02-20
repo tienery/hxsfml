@@ -28,3 +28,9 @@ extern class Color {
     @:native("sf::Color::Magenta")  public static var magenta:Color;
     @:native("sf::Color::Cyan")     public static var cyan:Color;
 }
+
+@:include("SFML/Graphics.hpp")
+@:structAccess
+@:native("sf::Color")
+extern class ColorRaw extends Color {
+}

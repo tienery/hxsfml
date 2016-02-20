@@ -29,6 +29,21 @@ extern class Vector2f extends Vector2<Float> {
 
 @:include("SFML/System.hpp")
 @:structAccess
+@:native("const sf::Vector2u&")
+extern class Vector2u extends Vector2<UInt> {
+    //Constructors
+    @:native("sf::Vector2u")         public static function create(x:UInt, y:UInt):Vector2u;
+    @:native("sf::Vector2u")         public static function createEmpty():Vector2u;
+}
+
+@:include("SFML/System.hpp")
+@:structAccess
+@:native("sf::Vector2u")
+extern class Vector2uRaw extends Vector2u {
+}
+
+@:include("SFML/System.hpp")
+@:structAccess
 @:native("sf::Vector2f")
 extern class Vector2fRaw extends Vector2<Float> {
 }

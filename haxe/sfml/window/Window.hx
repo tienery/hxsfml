@@ -21,3 +21,9 @@ extern class Window {
     @:native("requestFocus")            public function requestFocus():Void;
     @:native("hasFocus")                public function hasFocus():Bool;
 }
+
+@:include("SFML/Window.hpp")
+@:structAccess
+@:native("const sf::Window&")
+extern class ConstWindow extends Window {
+}
