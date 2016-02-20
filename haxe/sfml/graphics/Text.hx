@@ -8,7 +8,7 @@ import sfml.system.Vector2.Vector2fRaw;
 @:structAccess
 @:native("sf::Text&")
 extern class Text extends Transformable implements Drawable {
-    @:native("sf::Text")            public static function create(string:ConstCharStar, font:Font, characterSize:UInt = 30):Text;
+    @:native("sf::Text")            public static function createInstance(string:ConstCharStar, font:Font, characterSize:UInt = 30):Text;
     @:native("setString")           public function setString(value:ConstCharStar):Void;
     @:native("setFont")             public function setFont(font:Font):Void;
     @:native("setCharacterSize")    public function setCharacterSize(size:UInt):Void;

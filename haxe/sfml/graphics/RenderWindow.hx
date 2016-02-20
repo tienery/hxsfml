@@ -12,7 +12,7 @@ import sfml.graphics.RenderStates.RenderStatesConst;
 @:structAccess
 @:native("sf::RenderWindow&")
 extern class RenderWindow extends Window implements RenderTarget {
-    @:native("sf::RenderWindow")        public static function create(mode:VideoMode, name:ConstCharStar):RenderWindow;
+    @:native("sf::RenderWindow")        public static function createInstance(mode:VideoMode, name:ConstCharStar):RenderWindow;
     @:native("clear")                   public function clear(color:Color):Void;
     @:native("setView")                 public function setView(view:View):Void;
     @:native("getView")                 public function getView():View;

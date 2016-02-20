@@ -7,7 +7,7 @@ import sfml.graphics.Rect.FloatRect;
 @:structAccess
 @:native("sf::RectangleShape&")
 extern class RectangleShape extends Shape implements Drawable {
-    @:native("sf::RectangleShape")           public static function create(size:Vector2f):RectangleShape;
+    @:native("sf::RectangleShape")           public static function createInstance(size:Vector2f):RectangleShape;
     
     @:native("setSize")           public function setSize(size:Vector2f):Void;
     @:native("getSize")           public function getSize():Vector2f;

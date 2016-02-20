@@ -7,7 +7,7 @@ import sfml.graphics.Texture.TexturePtr;
 @:structAccess
 @:native("sf::Sprite&")
 extern class Sprite extends Transformable implements Drawable {
-    @:native("sf::Sprite")          public static function create(texture:Texture):Sprite;
+    @:native("sf::Sprite")          public static function createInstance(texture:Texture):Sprite;
     @:native("sf::Sprite")          public static function createFromRect(texture:Texture, rect:ConstIntRectPtr):Sprite;
     @:native("sf::Sprite")          public static function createEmpty():Sprite;
     

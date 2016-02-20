@@ -8,7 +8,7 @@ import sfml.graphics.Rect.FloatRect;
 @:native("sf::View&")
 extern class View {
     //Constructors
-    @:native("sf::View")        public static function create():View;
+    @:native("sf::View")        public static function createInstance():View;
     @:native("sf::View")        public static function createByRect(rect:FloatRect):View;
     
     //Members

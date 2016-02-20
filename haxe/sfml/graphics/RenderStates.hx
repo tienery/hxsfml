@@ -5,7 +5,7 @@ package sfml.graphics;
 @:native("sf::RenderStates&")
 extern class RenderStates {
     //Constructors
-    @:native("sf::RenderStates")        public static function create(?blendMode:BlendMode):RenderStates;
+    @:native("sf::RenderStates")        public static function createInstance(?blendMode:BlendMode):RenderStates;
     
     //Members
     @:native("blendMode")       public var blendMode:BlendMode;

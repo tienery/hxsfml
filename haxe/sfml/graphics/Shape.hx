@@ -7,7 +7,7 @@ import sfml.graphics.Rect.FloatRect;
 @:structAccess
 @:native("sf::Shape&")
 extern class Shape extends Transformable implements Drawable {
-    @:native("sf::Shape")           public static function create():Shape;
+    @:native("sf::Shape")           public static function createInstance():Shape;
     
     @:native("setFillColor")        public function setFillColor(color:Color):Void;
     @:native("setOutlineColor")     public function setOutlineColor(color:Color):Void;
