@@ -45,5 +45,11 @@ extern class Vector2uRaw extends Vector2u {
 @:include("SFML/System.hpp")
 @:structAccess
 @:native("sf::Vector2f")
-extern class Vector2fRaw extends Vector2<Float> {
+extern class Vector2fRaw extends Vector2f {
+}
+
+@:include("SFML/System.hpp")
+@:structAccess
+@:native("sf::Vector2i")
+extern class Vector2iRaw extends Vector2i {
 }
