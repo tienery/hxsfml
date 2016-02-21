@@ -5,6 +5,7 @@ import sfml.system.Vector2.Vector2i;
 import sfml.system.Vector2.Vector2f;
 import sfml.graphics.Rect.IntRect;
 import sfml.graphics.RenderStates.RenderStatesConst;
+import sfml.graphics.VertexArray.ConstVertexArray;
 
 @:include("SFML/Graphics.hpp")
 @:structAccess
@@ -31,4 +32,6 @@ extern class RenderTexture implements RenderTarget {
     @:native("mapCoordsToPixel")        public function mapCoordsToPixel(point:Vector2f):Vector2i;
     @:native("mapCoordsToPixelFromView")public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
     @:native("draw")                    public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
+    @:native("draw")                    public function drawVertices(vertices:ConstVertexArray, vertexCount:Int, 
+                                                            type:Int, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
 }
