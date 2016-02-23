@@ -32,4 +32,7 @@ extern class RenderTexture implements RenderTarget {
     @:native("mapCoordsToPixel")        public function mapCoordsToPixel(point:Vector2f):Vector2i;
     @:native("mapCoordsToPixelFromView")public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
     @:native("draw")                    public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
+    @:native("pushGLStates")            public function pushGLStates():Void;
+    @:native("popGLStates")             public function popGLStates():Void;
+    @:native("resetGLStates")           public function resetGLStates():Void;
 }

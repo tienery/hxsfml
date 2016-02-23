@@ -23,6 +23,9 @@ extern class RenderWindow extends Window implements RenderTarget {
     @:native("mapCoordsToPixel")        public function mapCoordsToPixel(point:Vector2f):Vector2i;
     @:native("mapCoordsToPixelFromView")public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
     @:native("draw")                    public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
+    @:native("pushGLStates")            public function pushGLStates():Void;
+    @:native("popGLStates")             public function popGLStates():Void;
+    @:native("resetGLStates")           public function resetGLStates():Void;
 }
 
 @:include("SFML/Graphics.hpp")
@@ -39,4 +42,7 @@ extern class ConstRenderWindow extends RenderWindow implements RenderTarget {
     @:native("mapCoordsToPixel")        override public function mapCoordsToPixel(point:Vector2f):Vector2i;
     @:native("mapCoordsToPixelFromView")override public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
     @:native("draw")                    override public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
+    @:native("pushGLStates")            override public function pushGLStates():Void;
+    @:native("popGLStates")             override public function popGLStates():Void;
+    @:native("resetGLStates")           override public function resetGLStates():Void;
 }

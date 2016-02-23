@@ -17,5 +17,7 @@ interface RenderTarget {
     public function mapCoordsToPixel(point:Vector2f):Vector2i;
     public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
     public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
-    
+    public function pushGLStates():Void;
+    public function popGLStates():Void;
+    public function resetGLStates():Void;
 }
