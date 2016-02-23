@@ -17,6 +17,5 @@ interface RenderTarget {
     public function mapCoordsToPixel(point:Vector2f):Vector2i;
     public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
     public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
-    public function drawVertices(vertices:VertexArray, vertexCount:Int, type:PrimitiveType, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
     
 }

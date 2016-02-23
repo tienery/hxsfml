@@ -2,7 +2,7 @@
     <section if="windows">
         <files id="haxe">
             <compilerflag value="-I${haxelib:hxsfml}/../SFML/include" />
-            <compilerflag value="-I${haxelib:hxsfml}/../cpp/" />
+            <compilerflag value="-I${haxelib:hxsfml}/../cpp" />
             <compilerflag value="-DUNICODE" />
             <compilerflag value="-D_UNICODE" />
         </files>

@@ -6,7 +6,7 @@ import cpp.Int64;
 @:structAccess
 @:native("sf::Time")
 extern class Time {
-    @:native("sf::Time")        public static function createInstance():TimePtr;
+    @:native("sf::Time")        public static function createInstance():Time;
     
     @:native("asSeconds")       public function asSeconds():Float;
     @:native("asMilliseconds")  public function asMilliseconds():Int;
@@ -17,4 +17,5 @@ extern class Time {
 @:structAccess
 @:native("sf::Time&")
 extern class TimePtr extends Time {
+    @:native("sf::Time")        public static function createInstance():TimePtr;
 }
