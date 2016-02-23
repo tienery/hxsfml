@@ -3,7 +3,6 @@ package;
 import sfml.graphics.*;
 import sfml.window.*;
 import sfml.audio.*;
-import helpers.SoundHelper;
 
 @:buildXml('<include name="${haxelib:hxsfml}/../Build.xml" />')
 class Main
@@ -13,12 +12,11 @@ class Main
     {
         var window:RenderWindow = RenderWindow.createInstance(VideoMode.createInstance(800, 600), "Test 06 - Sound Devices");
         
-        var devices = SoundHelper.getAvailableDevices();
+        var sound = Sound.createInstance();
+        if (!sound.loadFromFile("sound.wav"))
+            trace("Error loading sound.");
         
-        for (i in 0...devices.length)
-            trace(devices[i]);
-        
-        trace(SoundHelper.getDefaultDevice());
+        Listener.setPosition(0, 0, 0);
         
         while (window.isOpen())
         {
