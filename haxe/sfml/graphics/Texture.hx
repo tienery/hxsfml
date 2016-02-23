@@ -32,3 +32,9 @@ extern class Texture {
 @:native("const sf::Texture*")
 extern class TexturePtr extends Texture {
 }
+
+@:include("SFML/Graphics.hpp")
+@:structAccess
+@:native("const sf::Texture&")
+extern class ConstTexture extends Texture {
+}

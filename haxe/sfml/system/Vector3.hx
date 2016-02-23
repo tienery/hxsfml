@@ -11,6 +11,6 @@ extern class Vector3<T> {
 
 @:include("SFML/System.hpp")
 @:structAccess
-@:native("sf::Vector3f")
+@:native("const sf::Vector3f&")
 extern class Vector3f extends Vector3<Float> {
 }
