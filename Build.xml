@@ -1,20 +1,70 @@
 <xml>
+    
     <section if="windows">
         <files id="haxe">
             <compilerflag value="-I${haxelib:hxsfml}/../SFML/include" />
             <compilerflag value="-I${haxelib:hxsfml}/../cpp" />
             <compilerflag value="-DUNICODE" />
             <compilerflag value="-D_UNICODE" />
+            <compilerflag value="-DSFML_STATIC" if="static" />
+            <flag value="-debug" if="debug" />
         </files>
         
         <target id="haxe" tool="linker" toolid="exe">
-            <!-- <flag value="/VERBOSE" /> -->
-            <lib name="${haxelib:hxsfml}/../lib/sfml-audio.lib" />
-            <lib name="${haxelib:hxsfml}/../lib/sfml-graphics.lib" />
-            <lib name="${haxelib:hxsfml}/../lib/sfml-main.lib" />
-            <lib name="${haxelib:hxsfml}/../lib/sfml-network.lib" />
-            <lib name="${haxelib:hxsfml}/../lib/sfml-system.lib" />
-            <lib name="${haxelib:hxsfml}/../lib/sfml-window.lib" />
+            <!-- <flag value="/VERBOSE" /> --> <!-- Uncomment this line out if you want more detailed linking when building. -->
+            
+            <section unless="debug || static">
+                <lib name="${haxelib:hxsfml}/../lib/sfml-audio.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-graphics.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-main.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-network.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-system.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-window.lib" />
+            </section>
+            
+            <section if="debug">
+                <lib name="${haxelib:hxsfml}/../lib/sfml-audio-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-graphics-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-main-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-network-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-system-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-window-d.lib" />
+            </section>
+            
+            <section if="static">
+                <lib name="${haxelib:hxsfml}/../lib/sfml-audio-s.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-graphics-s.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-network-s.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-system-s.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-window-s.lib" />
+            </section>
+            
+            <section if="static && debug">
+                <lib name="${haxelib:hxsfml}/../lib/sfml-audio-s-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-graphics-s-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-network-s-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-system-s-d.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/sfml-window-s-d.lib" />
+            </section>
+            
+            <section if ="static">
+                <flag value="/NODEFAULTLIB:LIBCMT" />
+                <flag value="/NODEFAULTLIB:LIBCPMT" />
+            
+                <lib name="${haxelib:hxsfml}/../lib/freetype.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/jpeg.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/flac.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/vorbisenc.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/vorbisfile.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/vorbis.lib" />
+                <lib name="${haxelib:hxsfml}/../lib/ogg.lib" />
+            
+                <lib name="opengl32.lib" />
+                <lib name="winmm.lib" />
+                <lib name="gdi32.lib" />
+                <lib name="ws2_32.lib" />
+            </section>
+            
         </target>
     </section>
 </xml>
