@@ -22,7 +22,7 @@
                 <lib name="${haxelib:hxsfml}/../lib/sfml-window.lib" />
             </section>
             
-            <section if="debug">
+            <section if="debug" unless="static">
                 <lib name="${haxelib:hxsfml}/../lib/sfml-audio-d.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/sfml-graphics-d.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/sfml-main-d.lib" />
@@ -31,7 +31,7 @@
                 <lib name="${haxelib:hxsfml}/../lib/sfml-window-d.lib" />
             </section>
             
-            <section if="static">
+            <section if="static" unless="debug">
                 <lib name="${haxelib:hxsfml}/../lib/sfml-audio-s.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/sfml-graphics-s.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/sfml-network-s.lib" />
@@ -47,7 +47,7 @@
                 <lib name="${haxelib:hxsfml}/../lib/sfml-window-s-d.lib" />
             </section>
             
-            <section if ="static">
+            <section if="static">
                 <flag value="/NODEFAULTLIB:LIBCMT" />
                 <flag value="/NODEFAULTLIB:LIBCPMT" />
             
