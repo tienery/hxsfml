@@ -5,8 +5,6 @@ import sfml.window.*;
 import sfml.system.Vector2.Vector2f;
 import sfml.graphics.Rect.ConstIntRectPtr;
 
-import window.EventHelper;
-
 @:buildXml('<include name="${haxelib:hxsfml}/../Build.xml" />')
 class Main
 {

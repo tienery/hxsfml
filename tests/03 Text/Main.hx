@@ -3,7 +3,6 @@ package;
 import sfml.graphics.*;
 import sfml.window.*;
 import sfml.system.Vector2.Vector2f;
-import window.EventHelper;
 
 @:buildXml('<include name="${haxelib:hxsfml}/../Build.xml" />')
 class Main

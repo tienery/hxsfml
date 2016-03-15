@@ -2,7 +2,6 @@ package;
 
 import sfml.graphics.*;
 import sfml.window.*;
-import window.EventHelper;
 
 @:buildXml('<include name="${haxelib:hxsfml}/../Build.xml" />')
 class Main
