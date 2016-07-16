@@ -6,7 +6,7 @@ import sfml.system.Vector2.Vector2f;
 @:native("hxsfml::Vertex*")
 extern class Vertex {
 
-    @:native("new Vertex")      public static function create(type:PrimitiveType, count:Int):Vertex; 
+    @:native("new hxsfml::Vertex")      public static function create(type:PrimitiveType, count:Int):Vertex; 
     
     @:native("add")             public function add(position:Vector2f, color:Color, texCoords:Vector2f):Void;
     @:native("clear")           public function clear():Void;
