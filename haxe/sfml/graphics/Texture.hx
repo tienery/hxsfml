@@ -13,7 +13,6 @@ extern class Texture {
     @:native("sf::Texture")         @:overload(function():Texture {})
     @:native("sf::Texture")         public static function create(copy:Texture):Texture;
     
-    @:native("create")              public function create(width:UInt, height:UInt):Bool;
     @:native("loadFromFile")        public function loadFromFile(filename:ConstCharStar, area:ConstIntRectPtr):Bool;
     @:native("loadFromImage")       public function loadFromImage(image:Image, area:ConstIntRectPtr):Bool;
     @:native("getSize")             public function getSize():Vector2uRaw;

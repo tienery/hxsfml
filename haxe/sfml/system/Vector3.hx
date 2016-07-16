@@ -14,7 +14,7 @@ extern class Vector3<T> {
 @:native("const sf::Vector3f&")
 extern class Vector3f extends Vector3<Float> {
     @:native("sf::Vector3f")    @:overload(function(x:Float, y:Float, z:Float):Vector3f {})
-    @:native("sf::Vector3f")    public static function createEmpty():Vector3f;
+    @:native("sf::Vector3f")    public static function create():Vector3f;
 }
 
 @:include("SFML/System.hpp")

@@ -9,7 +9,7 @@ import sfml.graphics.Rect.FloatRect;
 extern class View {
     //Constructors
     @:native("sf::View")        @:overload(function():View {})
-    @:native("sf::View")        public static function createByRect(rect:FloatRect):View;
+    @:native("sf::View")        public static function create(rect:FloatRect):View;
     
     //Members
     @:native("setCenter")       public function setCenter(x:Float, y:Float):Void;

@@ -12,7 +12,6 @@ import sfml.graphics.Color.ColorRaw;
 extern class Image {
     @:native("sf::Image")           public static function create():Image;
     
-    @:native("create")              public function create(width:UInt, height:UInt, color:Color):Void;
     @:native("loadFromFile")        public function loadFromFile(filename:ConstCharStar):Bool;
     @:native("saveToFile")          public function saveToFile(filename:ConstCharStar):Bool;
     @:native("getSize")             public function getSize():Vector2uRaw;
