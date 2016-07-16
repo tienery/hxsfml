@@ -4,5 +4,5 @@ package sfml.system;
 @:structAccess
 @:native("sf::Lock&")
 extern class Lock {
-    @:native("sf::Lock")    public static function createInstance(mutex:Mutex):Lock;
+    @:native("sf::Lock")    public static function create(mutex:Mutex):Lock;
 }

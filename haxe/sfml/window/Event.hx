@@ -4,7 +4,7 @@ package sfml.window;
 @:structAccess
 @:native("sf::Event&")
 extern class Event {
-    @:native("sf::Event")       public static function createInstance():Event;
+    @:native("sf::Event")       public static function create():Event;
 
     @:native("size")            public var size:SizeEvent;
     @:native("key")             public var key:KeyEvent;

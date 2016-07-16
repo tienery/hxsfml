@@ -11,7 +11,7 @@ import sfml.graphics.VertexArray.ConstVertexArray;
 @:structAccess
 @:native("sf::RenderTexture&")
 extern class RenderTexture implements RenderTarget {
-    @:native("sf::RenderTexture")       public static function createInstance():RenderTexture;
+    @:native("sf::RenderTexture")       public static function create():RenderTexture;
     
     @:native("create")                  public function create(width:UInt, height:UInt, depthBuffer:Bool = false):Void;
     @:native("setSmooth")               public function setSmooth(smooth:Bool):Void;

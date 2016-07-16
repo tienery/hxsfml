@@ -6,7 +6,7 @@ import cpp.ConstCharStar;
 @:structAccess
 @:native("sf::Font&")
 extern class Font {
-    @:native("sf::Font")                public static function createInstance():Font;
+    @:native("sf::Font")                public static function create():Font;
     @:native("loadFromFile")            public function loadFromFile(filename:ConstCharStar):Bool;
     @:native("getInfo")                 public function getInfo():FontInfo;
     @:native("getGlyph")                public function getGlyph(codePoint:UInt, characterSize:UInt, bold:Bool):Glyph;

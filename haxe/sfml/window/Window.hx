@@ -11,8 +11,7 @@ import sfml.window.ContextSettings.ConstContextSettings;
 @:structAccess
 @:native("sf::Window&")
 extern class Window {
-    @:native("sf::Window")              public static function createInstance(mode:VideoMode, name:ConstCharStar):Window;
-    @:native("create")                  public function create(mode:VideoMode, name:ConstCharStar, style:UInt, ?settings:ConstContextSettings):Void;
+    @:native("sf::Window")              public static function create(mode:VideoMode, name:ConstCharStar):Window;
     @:native("close")                   public function close():Void;
     @:native("isOpen")                  public function isOpen():Bool;
     @:native("getSettings")             public function getSettings():ContextSettings;

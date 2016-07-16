@@ -6,7 +6,7 @@ import sfml.system.Vector2.Vector2f;
 @:structAccess
 @:native("sf::Transformable&")
 extern class Transformable {
-    @:native("sf::Transformable")       public static function createInstance():Transformable;
+    @:native("sf::Transformable")       public static function create():Transformable;
     
     @:native("setPosition")         public function setPosition(position:Vector2f):Void;
     @:native("setRotation")         public function setRotation(angle:Float):Void;

@@ -10,8 +10,8 @@ import sfml.system.Vector2.Vector2uRaw;
 @:structAccess
 @:native("sf::Texture&")
 extern class Texture {
-    @:native("sf::Texture")         public static function createInstance():Texture;
-    @:native("sf::Texture")         public static function createFromCopy(copy:Texture):Texture;
+    @:native("sf::Texture")         @:overload(function():Texture {})
+    @:native("sf::Texture")         public static function create(copy:Texture):Texture;
     
     @:native("create")              public function create(width:UInt, height:UInt):Bool;
     @:native("loadFromFile")        public function loadFromFile(filename:ConstCharStar, area:ConstIntRectPtr):Bool;

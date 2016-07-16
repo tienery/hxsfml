@@ -7,7 +7,7 @@ import sfml.graphics.Rect.FloatRect;
 @:structAccess
 @:native("sf::ConvexShape&")
 extern class ConvexShape extends Shape implements Drawable {
-    @:native("sf::ConvexShape")           public static function createInstance(pointCount:UInt):ConvexShape;
+    @:native("sf::ConvexShape")           public static function create(pointCount:UInt):ConvexShape;
     
     @:native("setPointCount")           public function setPointCount(count:UInt):Void;
     @:native("setPoint")                public function setPoint(index:UInt, point:Vector2f):Void;

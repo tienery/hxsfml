@@ -8,8 +8,8 @@ import cpp.UInt32;
 @:native("const sf::Color&")
 extern class Color {
     //Constructors
-    @:native("sf::Color")       public static function createFromRgba(r:UInt8, g:UInt8, b:UInt8, a:UInt8 = 255):Color;
-    @:native("sf::Color")       public static function createFromHex(color:UInt32):Color;
+    @:native("sf::Color")       @:overload(function(r:UInt8, g:UInt8, b:UInt8, a:UInt8):Color {})
+    @:native("sf::Color")       public static function create(color:UInt32):Color;
     
     //Members
     @:native("toInteger")       public function toInteger():UInt32;

@@ -10,7 +10,7 @@ import sfml.graphics.Texture.ConstTexture;
 @:structAccess
 @:native("sf::Shader&")
 extern class Shader {
-    @:native("sf::Shader")          public static function createInstance():Shader;
+    @:native("sf::Shader")          public static function create():Shader;
     
     @:native("loadFromFile")        @:overload(function(filename:ConstCharStar, type:Int):Bool {})
     @:native("loadFromFile")        public function loadFromFile(vertexFilename:ConstCharStar, fragmentFilename:ConstCharStar):Bool;

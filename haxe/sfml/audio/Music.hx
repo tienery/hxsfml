@@ -7,7 +7,7 @@ import sfml.system.Time;
 @:structAccess
 @:native("sf::Music&")
 extern class Music extends SoundStream {
-    @:native("sf::Music")       public static function createInstance():Music;
+    @:native("sf::Music")       public static function create():Music;
     
     @:native("openFromFile")    public function openFromFile(filename:ConstCharStar):Bool;
     @:native("getDuration")     public function getDuration():Time;

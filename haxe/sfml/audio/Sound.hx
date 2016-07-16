@@ -8,7 +8,7 @@ import sfml.system.Time;
 @:structAccess
 @:native("sf::Sound&")
 extern class Sound extends SoundSource {
-    @:native("sf::Sound")           public static function createInstance():Sound;
+    @:native("sf::Sound")           public static function create():Sound;
     
     @:native("play")                public function play():Void;
     @:native("pause")               public function pause():Void;

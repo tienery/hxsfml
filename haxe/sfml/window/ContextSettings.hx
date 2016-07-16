@@ -4,7 +4,7 @@ package sfml.window;
 @:structAccess
 @:native("sf::ContextSettings&")
 extern class ContextSettings {
-    @:native("sf::ContextSettings")         public static function createInstance():ContextSettings;
+    @:native("sf::ContextSettings")         public static function create():ContextSettings;
     @:native("depthBits")           public var depthBits:UInt;
     @:native("stencilBits")         public var stencilBits:UInt;
     @:native("antialiasingLevel")   public var antialiasingLevel:UInt;

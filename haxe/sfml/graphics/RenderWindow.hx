@@ -12,7 +12,7 @@ import sfml.graphics.RenderStates.RenderStatesConst;
 @:structAccess
 @:native("sf::RenderWindow&")
 extern class RenderWindow extends Window implements RenderTarget {
-    @:native("sf::RenderWindow")        public static function createInstance(mode:VideoMode, name:ConstCharStar):RenderWindow;
+    @:native("sf::RenderWindow")        public static function create(mode:VideoMode, name:ConstCharStar):RenderWindow;
     @:native("clear")                   public function clear(color:Color):Void;
     @:native("setView")                 public function setView(view:View):Void;
     @:native("getView")                 public function getView():View;
@@ -22,7 +22,7 @@ extern class RenderWindow extends Window implements RenderTarget {
     @:native("mapPixelToCoordsFromView")public function mapPixelToCoordsFromView(point:Vector2i, view:View):Vector2i;
     @:native("mapCoordsToPixel")        public function mapCoordsToPixel(point:Vector2f):Vector2i;
     @:native("mapCoordsToPixelFromView")public function mapCoordsToPixelFromView(point:Vector2f, view:View):Vector2i;
-    @:native("draw")                    public function draw(drawable:Drawable, ?states:RenderStatesConst = RenderStates.DEFAULT):Void;
+    @:native("draw")                    public function draw(drawable:Drawable, ?states:RenderStatesConst):Void;
     @:native("pushGLStates")            public function pushGLStates():Void;
     @:native("popGLStates")             public function popGLStates():Void;
     @:native("resetGLStates")           public function resetGLStates():Void;

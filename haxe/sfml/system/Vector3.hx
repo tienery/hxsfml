@@ -13,7 +13,7 @@ extern class Vector3<T> {
 @:structAccess
 @:native("const sf::Vector3f&")
 extern class Vector3f extends Vector3<Float> {
-    @:native("sf::Vector3f")    public static function createInstance(x:Float, y:Float, z:Float):Vector3f;
+    @:native("sf::Vector3f")    @:overload(function(x:Float, y:Float, z:Float):Vector3f {})
     @:native("sf::Vector3f")    public static function createEmpty():Vector3f;
 }
 

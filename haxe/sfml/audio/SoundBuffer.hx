@@ -7,7 +7,7 @@ import sfml.system.Time;
 @:structAccess
 @:native("sf::SoundBuffer&")
 extern class SoundBuffer {
-    @:native("sf::SoundBuffer")     public static function createInstance():ConstSoundBuffer;
+    @:native("sf::SoundBuffer")     public static function create():ConstSoundBuffer;
     
     @:native("loadFromFile")        public function loadFromFile(filename:ConstCharStar):Bool;
     @:native("saveToFile")          public function saveToFile(filename:ConstCharStar):Bool;

@@ -10,7 +10,7 @@ import sfml.graphics.Color.ColorRaw;
 @:structAccess
 @:native("const sf::Image&")
 extern class Image {
-    @:native("sf::Image")           public static function createInstance():Image;
+    @:native("sf::Image")           public static function create():Image;
     
     @:native("create")              public function create(width:UInt, height:UInt, color:Color):Void;
     @:native("loadFromFile")        public function loadFromFile(filename:ConstCharStar):Bool;
