@@ -3,7 +3,7 @@ package sfml.graphics;
 import sfml.system.Vector2.Vector2f;
 
 @:include("VertexHelper.cpp")
-@:native("Vertex*")
+@:native("hxsfml::Vertex*")
 extern class Vertex {
 
     @:native("new Vertex")      public static function create(type:PrimitiveType, count:Int):Vertex; 

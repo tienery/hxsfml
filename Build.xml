@@ -58,7 +58,8 @@
                 <lib name="${haxelib:hxsfml}/../lib/vorbisfile.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/vorbis.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/ogg.lib" />
-            
+				<lib name="${haxelib:hxsfml}/../lib/openal32.lib" />
+				
                 <lib name="opengl32.lib" />
                 <lib name="winmm.lib" />
                 <lib name="gdi32.lib" />
