@@ -4,7 +4,7 @@
     "license": "MIT",
     "tags": [ "game" ],
     "description": "Extern classes for SFML.",
-    "version": "0.0.1-alpha",
+    "version": "1.0.0",
     "classPath": "haxe/",
     "releasenote": "Foundations and a test to make sure compiling works.",
     "contributors": [ "tienery" ]

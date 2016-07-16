@@ -1,6 +1,8 @@
 # hxsfml
 Haxe externs and wrappers for SFML.
 
+It is recommended that you use Haxe 3.2.1 with the latest git version of hxcpp to build. This library does not compile successfully with the newest version of Haxe.
+
 ## Getting Started
 In order to use this library, you will need to first download the corresponding *.lib and *.dll (for Windows) from the official SFML website, found [here](http://www.sfml-dev.org/download/sfml/2.3.2/). For Windows users, you will need to download for the compiler you have installed. If in doubt, download the 32-bit version.
 
