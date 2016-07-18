@@ -39,7 +39,7 @@
                 <lib name="${haxelib:hxsfml}/../lib/sfml-window-s.lib" />
             </section>
             
-            <section if="static && debug">
+            <section if="static || debug">
                 <lib name="${haxelib:hxsfml}/../lib/sfml-audio-s-d.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/sfml-graphics-s-d.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/sfml-network-s-d.lib" />
@@ -58,7 +58,7 @@
                 <lib name="${haxelib:hxsfml}/../lib/vorbisfile.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/vorbis.lib" />
                 <lib name="${haxelib:hxsfml}/../lib/ogg.lib" />
-				<lib name="${haxelib:hxsfml}/../lib/openal32.lib" />
+		<lib name="${haxelib:hxsfml}/../lib/openal32.lib" />
 				
                 <lib name="opengl32.lib" />
                 <lib name="winmm.lib" />
