@@ -22,6 +22,13 @@ For statically linking, you will need to include all .lib files, as well as the 
 
 If you get compile errors, it is likely you are using the incorrect version of the .lib files with the compiler you use.
 
+### Using the Vertex class
+Due to my lack of understanding of the subject, the Vertex class is not the exact binding over the Vertex class in SFML. But if you wish to use it, it's fairly simple.
+
+Firstly, create the `Vertex` class using `Vertex.create` using a `PrimitiveType` and the number of vertices to be included.
+
+You can `append` vertex using the `add` function. And to draw to a window, using the `draw` method which takes a value to your `RenderWindow`. I understand this is not really true to SFML, but this is best I can do for now. 
+
 ### Building
 When you build with dynamic linking, you will also need the appropriate *.dll files in the `bin` directory of the application to use it, otherwise it will crash.
 
